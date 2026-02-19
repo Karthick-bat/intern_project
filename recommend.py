@@ -3,8 +3,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 def load_data():
-    movies = pd.read_csv("C:/internship/movies.csv")
-    ratings = pd.read_csv("C:/internship/ratings.csv")
+    movies = pd.read_csv("movies.csv")
+    ratings = pd.read_csv("ratings.csv")
     return movies, ratings
 
 def preprocess_data(movies, ratings):
