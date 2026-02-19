@@ -4,7 +4,7 @@ from recommend import load_data, preprocess_data, collaborative_recommendations,
 st.title("🎬 Movie Recommendation System")
 
 # Load and preprocess data
-movies, ratings = load_data()
+movies, ratings = load_data("movies.csv")
 data, user_movie_matrix = preprocess_data(movies, ratings)
 
 menu = st.radio("Choose Recommendation Type:", ("Collaborative Filtering", "Content-Based Filtering"))
